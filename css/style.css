@@ -89,5 +89,68 @@ input, select {
 
 /* todo toolbar */
 #toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
 
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    width: 65%;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/* Todo list */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
 }
